@@ -6,7 +6,7 @@ public class CarManager {
     public void add(ArrayList<Car> Cars, Car car) {
     Cars.add(car);
 }
-    public void searchManufacturer(ArrayList<Car> carsList,String pnume){
+    public void searchManufacturer(ArrayList<Car> carsList,String amanufacturer){
         System.out.println("|     Manufacturer      |      Model      |      Year      |      MotorCapacity      |     Engine      |");
         System.out.println("|---------------------------------------------------------------------------------------------------|");
         String manufacturer;
@@ -23,7 +23,7 @@ public class CarManager {
             motorCapacity = car.getMotorCapacity();
             engine = car.getEngine();
 
-            if(pnume.equals(manufacturer)) {
+            if(amanufacturer.equals(manufacturer)) {
                 System.out.println("| " + i + " | " + manufacturer + " | "+ model+" | "+ year + " | "+ motorCapacity + " |"+ engine + " |");
                 System.out.println("|---------------------------------------------------------------------------------------------------|");
             }
